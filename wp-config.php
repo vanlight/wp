@@ -1,4 +1,7 @@
 <?php
+
+define('WP_HOME','http://xemwebsite.tk');
+define('WP_SITEURL','http://xemwebsite.tk');
 /**
  * The base configuration for WordPress
  *
@@ -17,8 +20,7 @@
  *
  * @package WordPress
  */
-define('WP_HOME','http://xemwebsite.tk');
-define('WP_SITEURL','http://xemwebsite.tk');
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('DB_NAME', 'u196318776_wp');
