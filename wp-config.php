@@ -26,7 +26,7 @@ define('DB_NAME', 'u196318776_wp');
 define('DB_USER', 'u196318776_root');
 
 /** MySQL database password */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', '123456');
 
 /** MySQL hostname */
 define('DB_HOST', 'mysql.hostinger.vn');
