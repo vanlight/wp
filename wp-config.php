@@ -1,7 +1,7 @@
 <?php
 
-define('WP_HOME','http://xemwebsite.tk');
-define('WP_SITEURL','http://xemwebsite.tk');
+define('WP_HOME','http://xemwebsite.tk/testgit');
+define('WP_SITEURL','http://xemwebsite.tk/testgit');
 /**
  * The base configuration for WordPress
  *
