@@ -32,19 +32,14 @@ error_reporting( E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_ERROR | E_W
  * If neither set of conditions is true, initiate loading the setup process.
  */
 if ( file_exists( ABSPATH . 'wp-config.php') ) {
+
 	/** The config file resides in ABSPATH */
-	if(strpos($_SERVER['HTTP_HOST'],'localhost')!=-1)
-		require_once( ABSPATH . 'wp-config-localhost.php' );
-	else
-		require_once( ABSPATH . 'wp-config.php' );
+	require_once( ABSPATH . 'wp-config.php' );
 
 } elseif ( @file_exists( dirname( ABSPATH ) . '/wp-config.php' ) && ! @file_exists( dirname( ABSPATH ) . '/wp-settings.php' ) ) {
 
 	/** The config file resides one level above ABSPATH but is not part of another install */
-	if(strpos($_SERVER['HTTP_HOST'],'localhost')!=FALSE)
-		require_once( ABSPATH . 'wp-config-localhost.php' );
-	else
-		require_once( ABSPATH . 'wp-config.php' );
+	require_once( dirname( ABSPATH ) . '/wp-config.php' );
 
 } else {
 
